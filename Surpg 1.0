@@ -1,0 +1,132 @@
+-- SURPG 1.0 - Hub Completo com Layout Moderno, Chaves Deslizantes e ESP
+-- Desenvolvido para o Delta Executor
+
+local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
+local Player = Players.LocalPlayer
+
+-- Foto do Perfil do Jogador Local
+local userId = Player.UserId
+local avatarThumb = "rbxthumb://type=AvatarHeadShot&id=" .. userId .. "&w=150&h=150"
+
+-- Interface Principal (Tema Dark Moderno)
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+
+-- Menu Lateral Esquerdo
+local Sidebar = Instance.new("Frame")
+local LogoTitle = Instance.new("TextLabel")
+
+-- Área de Conteúdo Principal
+local ContentArea = Instance.new("Frame")
+local SectionTitle = Instance.new("TextLabel")
+
+-- Perfil no rodapé da sidebar
+local ProfileBox = Instance.new("Frame")
+local AvatarImage = Instance.new("ImageLabel")
+local UserLabel = Instance.new("TextLabel")
+
+ScreenGui.Name = "Surpg1_0_ModernHub"
+ScreenGui.Parent = Player:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+-- Janela Principal
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+MainFrame.Position = UDim2.new(0.05, 0, 0.05, 0)
+MainFrame.Size = UDim2.new(0, 650, 0, 400)
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+local MainCorner = Instance.new("UICorner")
+MainCorner.CornerRadius = UDim.new(0, 8)
+MainCorner.Parent = MainFrame
+
+-- Sidebar Esquerda
+Sidebar.Name = "Sidebar"
+Sidebar.Parent = MainFrame
+Sidebar.BackgroundColor3 = Color3.fromRGB(20, 20, 26)
+Sidebar.Size = UDim2.new(0, 180, 1, 0)
+
+LogoTitle.Parent = Sidebar
+LogoTitle.BackgroundTransparency = 1
+LogoTitle.Position = UDim2.new(0.08, 0, 0.04, 0)
+LogoTitle.Size = UDim2.new(0.8, 0, 0, 30)
+LogoTitle.Font = Enum.Font.GothamBold
+LogoTitle.Text = "SURPG 1.0"
+LogoTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+LogoTitle.TextSize = 16
+LogoTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Perfil na Sidebar
+ProfileBox.Parent = Sidebar
+ProfileBox.BackgroundColor3 = Color3.fromRGB(28, 28, 36)
+ProfileBox.Position = UDim2.new(0.08, 0, 0.82, 0)
+ProfileBox.Size = UDim2.new(0.84, 
+-- SURPG 1.0 - Hub Completo com Layout Moderno, Chaves Deslizantes e ESP
+-- Desenvolvido para o Delta Executor
+
+local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
+local Player = Players.LocalPlayer
+
+-- Foto do Perfil do Jogador Local
+local userId = Player.UserId
+local avatarThumb = "rbxthumb://type=AvatarHeadShot&id=" .. userId .. "&w=150&h=150"
+
+-- Interface Principal (Tema Dark Moderno)
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+
+-- Menu Lateral Esquerdo
+local Sidebar = Instance.new("Frame")
+local LogoTitle = Instance.new("TextLabel")
+
+-- Área de Conteúdo Principal
+local ContentArea = Instance.new("Frame")
+local SectionTitle = Instance.new("TextLabel")
+
+-- Perfil no rodapé da sidebar
+local ProfileBox = Instance.new("Frame")
+local AvatarImage = Instance.new("ImageLabel")
+local UserLabel = Instance.new("TextLabel")
+
+ScreenGui.Name = "Surpg1_0_ModernHub"
+ScreenGui.Parent = Player:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+-- Janela Principal
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+MainFrame.Position = UDim2.new(0.05, 0, 0.05, 0)
+MainFrame.Size = UDim2.new(0, 650, 0, 400)
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+local MainCorner = Instance.new("UICorner")
+MainCorner.CornerRadius = UDim.new(0, 8)
+MainCorner.Parent = MainFrame
+
+-- Sidebar Esquerda
+Sidebar.Name = "Sidebar"
+Sidebar.Parent = MainFrame
+Sidebar.BackgroundColor3 = Color3.fromRGB(20, 20, 26)
+Sidebar.Size = UDim2.new(0, 180, 1, 0)
+
+LogoTitle.Parent = Sidebar
+LogoTitle.BackgroundTransparency = 1
+LogoTitle.Position = UDim2.new(0.08, 0, 0.04, 0)
+LogoTitle.Size = UDim2.new(0.8, 0, 0, 30)
+LogoTitle.Font = Enum.Font.GothamBold
+LogoTitle.Text = "SURPG 1.0"
+LogoTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+LogoTitle.TextSize = 16
+LogoTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Perfil na Sidebar
+ProfileBox.Parent = Sidebar
+ProfileBox.BackgroundColor3 = Color3.fromRGB(28, 28, 36)
+ProfileBox.Position = UDim2.new(0.08, 0, 0.82, 0)
+ProfileBox.Size = UDim2.new(0.84, 
